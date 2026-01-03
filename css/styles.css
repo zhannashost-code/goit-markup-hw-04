@@ -147,6 +147,15 @@ body {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/heroimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .hero-title {
@@ -193,6 +202,16 @@ body {
 
 .features-item {
     width: calc((100% - 72px) / 4);
+}
+
+.features-icon-wrap {
+    margin-bottom: 8px;
+    height: 112px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .features-text {
@@ -262,6 +281,29 @@ body {
     border: 1px solid #e7e9fc;
 }
 
+.social-links {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    margin-top: 8px;
+}
+
+.social-links .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+}
+
+.social-links .icon {
+    fill: currentColor;
+}
+
 .portfolio-title {
     color: #2E2F42;
     font-weight: 700;
@@ -311,6 +353,16 @@ body {
     padding-bottom: 100px;
 }
 
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.footer-info {
+    max-width: 264px;
+}
+
 .page-footer .logo {
     color: #F4F4FD;
 }
@@ -321,10 +373,41 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
 }
 
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.footer-social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 16px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    margin-top: 8px;
+}
+
+.footer-social-links .footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+}
+
+.footer-social-links .footer-icon {
+    fill: currentColor;
 }
